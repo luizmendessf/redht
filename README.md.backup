@@ -1,0 +1,124 @@
+# REDHT - Website
+
+Website da Rede de Estudos de Direitos Humanos na Transnacionalidade (REDHT).
+
+## 🚀 Desenvolvimento Local
+
+### Pré-requisitos
+- Node.js 18+ 
+- npm ou pnpm
+
+### Instalação
+```bash
+# Instalar dependências
+npm install
+
+# Executar em modo desenvolvimento
+npm run dev
+```
+
+O site estará disponível em `http://localhost:3000` (ou 3001 se a porta 3000 estiver ocupada).
+
+## 🌐 Deploy no GitHub Pages
+
+### Configuração Inicial
+
+1. **Configurar GitHub Pages**:
+   - Vá para Settings > Pages no seu repositório
+   - Source: "GitHub Actions"
+   - Branch: `main`
+
+2. **Configurar Domínio Personalizado** (opcional):
+   - Em Settings > Pages, adicione seu domínio personalizado
+   - Configure os registros DNS conforme necessário
+
+### Deploy Automático
+
+O deploy é automático através do GitHub Actions. Sempre que você fizer push para a branch `main`, o site será atualizado automaticamente.
+
+```bash
+# Fazer alterações e fazer push
+git add .
+git commit -m "Atualizações no site"
+git push origin main
+```
+
+### Deploy Manual
+
+Se precisar fazer deploy manual:
+
+```bash
+# Build local
+npm run build
+
+# Os arquivos estarão na pasta 'out/'
+# Faça upload manual para o GitHub Pages se necessário
+```
+
+## 📁 Estrutura do Projeto
+
+```
+redht-website/
+├── app/                    # Páginas do Next.js 13+ (App Router)
+│   ├── page.tsx           # Página inicial
+│   ├── historia/          # Página de história
+│   ├── estrutura/         # Página de estrutura
+│   ├── parceiros/         # Página de parceiros
+│   ├── projetos/          # Página de projetos
+│   ├── noticias/          # Página de notícias
+│   └── acordos/           # Página de acordos
+├── components/            # Componentes reutilizáveis
+│   ├── animated-navbar.tsx
+│   ├── footer.tsx
+│   └── ui/               # Componentes UI (shadcn/ui)
+├── public/               # Arquivos estáticos
+│   └── images/           # Imagens do site
+├── .github/workflows/    # GitHub Actions
+└── next.config.mjs       # Configuração do Next.js
+```
+
+## 🛠️ Tecnologias
+
+- **Next.js 15** - Framework React
+- **TypeScript** - Tipagem estática
+- **Tailwind CSS** - Estilização
+- **shadcn/ui** - Componentes UI
+- **GitHub Pages** - Hospedagem
+
+## 📝 Scripts Disponíveis
+
+- `npm run dev` - Desenvolvimento local
+- `npm run build` - Build de produção
+- `npm run start` - Servidor de produção
+- `npm run lint` - Verificação de código
+- `npm run deploy` - Build + instruções de deploy
+
+## 🔧 Configurações Especiais
+
+### Para GitHub Pages
+- `output: 'export'` - Gera arquivos estáticos
+- `trailingSlash: true` - URLs compatíveis com GitHub Pages
+- `images.unoptimized: true` - Imagens sem otimização (necessário para export)
+
+### Seções Temporariamente Comentadas
+- Eventos em Destaque
+- Formulário de Contato  
+- Seção WhatsApp
+
+Para reativar, remova os comentários `{/* */}` no arquivo `app/page.tsx`.
+
+## 🐛 Solução de Problemas
+
+### Erro 404 no GitHub Pages
+- Verifique se o arquivo `.nojekyll` está presente
+- Confirme que o GitHub Actions está configurado corretamente
+- Aguarde alguns minutos após o push (deploy pode demorar)
+
+### Problemas de Build
+- Limpe o cache: `rm -rf .next out node_modules && npm install`
+- Verifique se todas as dependências estão instaladas
+- Confirme que não há erros de TypeScript
+
+## 📞 Suporte
+
+Para dúvidas ou problemas, entre em contato com a equipe de desenvolvimento.
