@@ -64,7 +64,7 @@ export default function HomePage() {
             Rede de Estudos de Direitos Humanos na Transnacionalidade
           </p>
           <p className="mx-auto max-w-3xl text-lg leading-7 text-blue-200 mb-12 text-balance">
-            Integração de docentes em escala global para a promoção da tutela ético-jurídica da dignidade da pessoa
+            Integração de docentes e discentes em escala global para a promoção da tutela ético-jurídica da dignidade da pessoa
             humana no sistema multinível.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

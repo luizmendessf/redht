@@ -14,6 +14,39 @@ export default function ProjetosPage() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
+          {/* Projeto Fortalecer */}
+          <Card className="hover:shadow-lg transition-shadow duration-300">
+            <CardHeader>
+              <div className="flex items-center gap-3">
+                <div className="p-2 bg-blue-100 rounded-lg">
+                  <FileText className="h-6 w-6 text-blue-600" />
+                </div>
+                <div>
+                  <CardTitle className="text-xl text-blue-900">Projeto Fortalecer</CardTitle>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-600 mb-4">
+                Edital para o projeto de pesquisa e extensão fortalecer.
+              </p>
+              <Button 
+                asChild 
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+              >
+                <a 
+                  href="https://drive.google.com/file/d/1i59ey8-De0PQqCwpCTf5cARPakJjtdlF/view?usp=sharing" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
+                >
+                  <Download className="h-4 w-4" />
+                  Acessar Edital
+                </a>
+              </Button>
+            </CardContent>
+          </Card>
+
           {/* Programa REDHT */}
           <Card className="hover:shadow-lg transition-shadow duration-300">
             <CardHeader>
@@ -85,6 +118,12 @@ export default function ProjetosPage() {
         <div className="mt-12 bg-blue-50 rounded-lg p-8">
           <h2 className="text-2xl font-bold text-blue-900 mb-4">Sobre os Projetos</h2>
           <div className="grid md:grid-cols-2 gap-6 text-gray-700">
+            <div>
+              <h3 className="font-semibold text-blue-800 mb-2">Projeto Fortalecer</h3>
+              <p>
+                Edital para o projeto de pesquisa e extensão fortalecer.
+              </p>
+            </div>
             <div>
               <h3 className="font-semibold text-blue-800 mb-2">Programma REDHT</h3>
               <p>

@@ -85,7 +85,7 @@ import {
           country: "Argentina",
           flagUrl: "/images/argentina.png",
           lattesUrl: "http://lattes.cnpq.br/0216634412234464",
-          imageUrl: "/images/pablo-banchio.png",
+          imageUrl: "/images/pablo.png",
       },
   ];
   

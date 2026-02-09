@@ -18,11 +18,25 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Menu } from "lucide-react"
 import { cn } from "@/lib/utils"
 
-const menuItems = [
+type SubMenuItem = {
+  title: string
+  href: string
+}
+
+type MenuItem = {
+  title: string
+  href?: string
+  items?: SubMenuItem[]
+}
+
+const menuItems: MenuItem[] = [
   { title: "Início", href: "/" },
   { title: "História", href: "/historia" },
   { title: "Estrutura", href: "/estrutura" },
+  { title: "Publicações", href: "/publicacoes" },
+  { title: "Eventos", href: "/eventos" },
   { title: "Projetos", href: "/projetos" },
+  { title: "Cursos e Formação Continuada", href: "/cursos" },
   { title: "Notícias", href: "/noticias" },
 ]
 

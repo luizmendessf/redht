@@ -13,11 +13,15 @@ import { ExternalLink, Users, Landmark, FileText, BookOpen, Globe, Library, Chev
 import Link from "next/link"
 
 const foundingMembers = [
+  "Luciana de Aboim Machado (Brasil)",
+  "Angelo Viglianisi Ferraro (Itália)",
+  "Viviane Coelho de Séllos-Knoerr (Brasil)",
   "Zelia Luiza Pierdoná (Brasil)",
   "Ricardo Mauricio Soares (Brasil)",
   "Maddalena Castellani (Itália)",
   "Cesare Triberti (Itália)",
   "Andrea Gazieri (Cônsul da Itália no Brasil)",
+
 ]
 
 export default function HistoriaUnificadaPage() {
@@ -141,7 +145,7 @@ export default function HistoriaUnificadaPage() {
                 <CardContent>
                   <p className="text-gray-600 mb-4">Acesse o documento que formalizou a criação da REDHT em 05 de novembro de 2019.</p>
                   <Button asChild>
-                    <a href="https://www.redht.com.br/_files/ugd/54b618_40790e9fac3d4f7a8b8351cbddcd07f1.pdf" target="_blank" rel="noopener noreferrer">
+                    <a href="https://21fa3082-0480-4b81-8645-6c65a11bf80d.filesusr.com/ugd/54b618_40790e9fac3d4f7a8b8351cbddcd07f1.pdf" target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-2 h-4 w-4" /> Visualizar PDF
                     </a>
                   </Button>
